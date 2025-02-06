@@ -13,7 +13,7 @@ class _Task7 extends State<Task7> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Text("Home Screen"),
+      body: Center(child: Text("Home Screen")),
     );
   }
 }
