@@ -1,9 +1,10 @@
-//import 'dart:math';
-
-//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-// login page Orange Money
+import 'task6.dart';
+import 'task7.dart';
+// import 'package:tasks/tasks/task6.dart';
+// import 'package:tasks/tasks/task7.dart';
+
 class Task5 extends StatefulWidget {
   const Task5({super.key});
 
@@ -41,6 +42,8 @@ class _Task5 extends State<Task5> {
                 decoration: InputDecoration(
                   labelText: "Phone Number",
                   border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.phone),
+                  prefix: Text("+962"),
                 ),
                 keyboardType: TextInputType.phone,
               ),
@@ -59,13 +62,19 @@ class _Task5 extends State<Task5> {
                   labelText: "password",
                   border: OutlineInputBorder(),
                   suffixIcon: Icon(Icons.visibility_off),
+                  // suffix: Text("show"),
                 ),
               ),
               SizedBox(height: 10),
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => ForgotPassword()),
+                    // );
+                  },
                   child: Text(
                     "Forgot Password?",
                     style: TextStyle(color: Colors.orange),
@@ -75,7 +84,12 @@ class _Task5 extends State<Task5> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Task7()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.orange,
                       padding: EdgeInsets.symmetric(vertical: 15),
@@ -98,7 +112,12 @@ class _Task5 extends State<Task5> {
                 children: [
                   Expanded(
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Task6()),
+                        );
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
                         padding: EdgeInsets.symmetric(vertical: 15),
@@ -109,7 +128,7 @@ class _Task5 extends State<Task5> {
                           Icon(Icons.add, color: Colors.white),
                           SizedBox(width: 10),
                           Text(
-                            "Register",
+                            "Sign Up",
                             style: TextStyle(fontSize: 18, color: Colors.white),
                           ),
                         ],
