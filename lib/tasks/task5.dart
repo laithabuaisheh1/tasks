@@ -44,14 +44,14 @@ class _Task5 extends State<Task5> {
                 ),
                 keyboardType: TextInputType.phone,
               ),
-              SizedBox(height: 20),
-              TextField(
-                decoration: InputDecoration(
-                  labelText: "wallet Number string with 077,078, or 079",
-                  border: OutlineInputBorder(),
-                ),
-                keyboardType: TextInputType.number,
-              ),
+              // SizedBox(height: 20),
+              // TextField(
+              //   decoration: InputDecoration(
+              //     labelText: "wallet Number string with 077,078, or 079",
+              //     border: OutlineInputBorder(),
+              //   ),
+              //   keyboardType: TextInputType.number,
+              // ),
               SizedBox(height: 20),
               TextField(
                 obscureText: true,
