@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295665758504",
+    "project_id": "tasks-cpf-laith",
+    "storage_bucket": "tasks-cpf-laith.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295665758504:android:8805dc541bd047653f601d",
+        "android_client_info": {
+          "package_name": "com.example.tasks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl8gcz_o1aApW4loUBydw2BI8sQ1HqkVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,7 +6,7 @@ import 'providers/login_provider.dart';
 import 'providers/product_provider.dart';
 import 'tasks/task11.dart';
 import 'tasks/task15.dart';
-import 'tasks/task16.dart';
+import 'tasks/task17.dart';
 import 'tasks/task5.dart';
 import 'tasks/task6.dart';
 import 'tasks/task7.dart';
@@ -16,8 +16,14 @@ import 'package:provider/provider.dart';
 
 import 'views/details.dart';
 import 'views/product_view_widget.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     MultiProvider(
       providers: [
@@ -44,7 +50,7 @@ class MyApp extends StatelessWidget {
       // this is task selector
       //home: const Task1(),
       //home: const Task2(),
-      home: Task16(),
+      home: Task17(),
     );
   }
 }
